@@ -1,0 +1,24 @@
+<div class="jumbotron">
+    <div class="form-group">
+        <div class="input-group">
+            <h2>Search for a Movie</h2>
+            <div>
+                <div>
+                    <input type="text" required [(ngModel)]="id_movie" (change)="callMovieService()" placeholder="Enter Movie name">
+                    <h3>Movie Details</h3>
+
+                    <p>
+                        <i> Title :</i> {{ this.movie_Title }} <br>
+                        <i> Plot :</i> {{ this.movie_Plot }} <br>
+                        <i> Actors :</i> {{ this.movie_Actors }} <br>
+                        <i> Directed by :</i> {{ this.movie_Director }} <br>
+                        <i> Rated :</i> {{ this.movie_Rated }} <br>
+                        <i> Release Date :</i> {{ this.movie_Released }} <br>
+                        <img [src]=this.movie_Poster />
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- /input-group -->
+    </div>
+</div>
